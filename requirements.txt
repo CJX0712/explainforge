@@ -1,0 +1,11 @@
+# ExplainForge runtime + test dependencies (pinned). For a fully reproducible
+# environment, see requirements.lock.txt (pip freeze). The four core explainers
+# (kernel_shap / lime / gradient_input) and permutation need only numpy + scikit-learn.
+# `shap` is an OPTIONAL reference backend used only to validate the numpy KernelSHAP;
+# the system runs and is benchmarked fully offline without it.
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.6
+shap==0.52.0
+pytest==9.1.1
